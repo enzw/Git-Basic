@@ -1,0 +1,12 @@
+* {
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar-brand {
+    font-weight: 700;
+}
+
+.nav-link {
+    font-size: large;
+    font-weight: 500;
+}
