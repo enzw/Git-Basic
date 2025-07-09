@@ -21,7 +21,26 @@
     display: flex;
     flex-flow: column;
     justify-content: end;
-    gap: 24px;
-    overflow: hidden;
     border: solid 4px #ff947f;
+}
+
+.notasi {
+    border-radius: 24px;
+    padding: 24px 24px 24px 24px;
+    font-style: italic;
+    height: fit-content;
+}
+
+#adj {
+    padding: 24px;
+    border-radius: 24px;
+    color: grey;
+    border-left: solid 4px #ff947f;
+    width: 670px;
+}
+
+.desc{
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
 }
