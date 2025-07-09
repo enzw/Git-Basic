@@ -24,9 +24,15 @@
     border: solid 4px #ff947f;
 }
 
-.notasi {
+.garis{
+    border-top: solid 2px #ffe5e0;
+    margin: 24px;
+    margin-right: 64px;
+}
+
+.side {
     border-radius: 24px;
-    padding: 24px 24px 24px 24px;
+    padding: 24px 24px 24px 24px !important;
     font-style: italic;
     height: fit-content;
 }
