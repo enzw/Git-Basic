@@ -22,6 +22,7 @@
     flex-flow: column;
     justify-content: end;
     border: solid 4px #ff947f;
+    overflow: hidden;
 }
 
 .garis{
