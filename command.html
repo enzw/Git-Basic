@@ -71,7 +71,8 @@
                     <div class="container-fluid border border-secondary shadow dark-text side d-flex flex-column gap-2">
                         <h4>"Apa Manfaat Memahami Git Command?"</h4>
                         <p>
-                            Terbiasa mengerjakan proyek secara terdokumentasi, fleksibel dalam mengeksplorasi fitur, dan
+                            Menjadi terbiasa mengerjakan proyek secara terdokumentasi, fleksibel dalam mengeksplorasi
+                            fitur, dan
                             mampu bekerja dengan cepat terutama dalam proyek kolaboratif.
                         </p>
                     </div>
@@ -103,6 +104,7 @@
                     <p class="dark-text fs-5">Contoh Input dan Output</p>
                     <code class="fs-5 dark-text">
                         $ git init <br>
+                        <hr>
                         Initialized empty Git repository in /your-folder/your-folder/my-project/.git/
                     </code>
                 </div>
@@ -134,7 +136,7 @@
                         $ git config --global user.email "enzo@example.com"
                         <br>
                         $ git config --list
-                        <br>
+                        <hr>
                         user.name=Enzo
                         <br>
                         user.email=enzo@example.com
@@ -145,7 +147,7 @@
             </div>
 
             <div class="row border border-secondary border-end-0 border-start-0 p-5">
-                <h1 class="dark-text ">• Git Init</h1>
+                <h1 class="dark-text ">• Git Status</h1>
             </div>
             <div class="row">
                 <div class="col-2 border-secondary border-end p-5 text-end">
@@ -155,20 +157,153 @@
                 </div>
                 <div class="col-6 p-5 fw-normal border-secondary border-end">
                     <p class="dark-text fs-4 fw-normal">
-                        <code><strong class="font-monospace">1. /git init/</strong></code> digunakan untuk
-                        menginisialisasi repository Git dengan memberi tahu
-                        bahwa folder saat
-                        ini akan dijadikan repository, karena Git tidak bisa digunakan tanpa proses inisialisasi ini.
+                        <code><strong class="font-monospace">3. /git status/</strong></code>
+                        digunakan untuk mengetahui status file dalam repository, seperti apakah file tersebut untracked,
+                        berada di staging area, atau telah dimodifikasi namun belum di-stage.
                     </p>
                 </div>
                 <div class="col-4 p-5">
                     <p class="dark-text fs-5">Contoh Input dan Output</p>
                     <code class="fs-5 dark-text">
-                        $ git init <br>
-                        Initialized empty Git repository in /your-folder/your-folder/my-project/.git/
+                        $ git status <br>
+                        <hr>
+                        On branch main
+                        <br>
+                        Untracked files:
+                        <br>
+                        <p></p>
+                        (use "git add <file>..." to include in what will be committed)
+                                hello.txt
+                        <br>
+                        <p></p>
+                        nothing added to commit but untracked files present (use "git add" to track)
                     </code>
                 </div>
             </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Add</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">4. /git add ./</strong></code> digunakan untuk
+                        memasukan semua file ke staging area. Jika ingin memasukan salah satu file saja bisa menggunakan
+                        <code><strong class="font-monospace">git add file-name.txt</strong></code> untuk memasukan salah
+                        satu file.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git add hello.txt <br>
+                        $ git status
+                        <br>
+                        <hr>
+                        On branch main <br>
+                        Changes to be committed: <br>
+                        (use "git restore --staged <file>..." to unstage) <br>
+                                new file:   hello.txt
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Commit</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">5. /git commit -m "My Message Commit"/</strong></code>
+                        digunakan untuk menyimpan snapshot perubahan file yang sudah berada di staging area ke dalam
+                        riwayat repository, biasanya disertai pesan deskriptif dengan opsi -m.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git commit -m "Menambahkan file hello.txt"
+                        <br>
+                        <hr>
+                        [main (root-commit) 3e2a1f1] Menambahkan file hello.txt <br>
+                        1 file changed, 1 insertion(+) <br>
+                        create mode 100644 hello.txt
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Log</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">6. /git log/</strong></code> digunakan untuk melihat
+                        riwayat commit dalam sebuah repository, termasuk informasi seperti hash commit, penulis,
+                        tanggal, dan pesan commit, dan tekan q untuk keluar dari tampilan log.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git log <br>
+                        <hr>
+                        commit 5a7c12e3f4d1a6c9b2e3fd1733be12c3b7aaf4b7 (HEAD -> main) <br>
+                        Author: Enzo <enzo@example.com> <br>
+                        Date:   Thu Jul 11 17:00:00 2025 +0700 <br>
+                        <p></p>
+                        Memperbarui isi hello.txt <br>
+                        <p></p> <br>
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Clone</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">7. /git clone/</strong></code> digunakan untuk menyalin
+                        (mengcopy) seluruh isi repository dari server (seperti GitHub atau GitLab) ke komputer lokal,
+                        termasuk semua file, riwayat commit, dan branch.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git clone https://github.com/enzo/projectku.git <br>
+                        <hr>
+                        Cloning into 'projectku'... <br>
+                        remote: Enumerating objects: 10, done. <br>
+                        remote: Counting objects: 100% (10/10), done. <br>
+                        remote: Compressing objects: 100% (8/8), done. <br>
+                        remote: Total 10 (delta 2), reused 10 (delta 2), pack-reused 0 <br>
+                        Unpacking objects: 100% (10/10), done.
+                    </code>
+                </div>
+            </div>
+
         </div>
     </div>
 
