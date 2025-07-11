@@ -14,6 +14,7 @@
 </head>
 
 <body class="bg-dark">
+
     <!-- Navigation Bar -->
     <nav class="navbar navbar-expand-lg navbar-dark bg-dark p-3 sticky-top shadow ">
         <div class="container-fluid">
@@ -60,9 +61,114 @@
     </div>
 
     <!-- Content -->
-    <div style="margin: 64px;">
-        <div class="container-fluid">
-            
+    <div class="container-fluid mt-5 pt-5 px-5">
+        <div class="table">
+            <div class="row">
+                <div class="col-7 d-flex align-items-center">
+                    <p class="big">Command List</p>
+                </div>
+                <div class="col">
+                    <div class="container-fluid border border-secondary shadow dark-text side d-flex flex-column gap-2">
+                        <h4>"Apa Manfaat Memahami Git Command?"</h4>
+                        <p>
+                            Terbiasa mengerjakan proyek secara terdokumentasi, fleksibel dalam mengeksplorasi fitur, dan
+                            mampu bekerja dengan cepat terutama dalam proyek kolaboratif.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid mt-5">
+        <div class="table">
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Init</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">1. /git init/</strong></code> digunakan untuk
+                        menginisialisasi repository Git dengan memberi tahu
+                        bahwa folder saat
+                        ini akan dijadikan repository, karena Git tidak bisa digunakan tanpa proses inisialisasi ini.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git init <br>
+                        Initialized empty Git repository in /your-folder/your-folder/my-project/.git/
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git config</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">2. /git config/</strong></code> digunakan untuk
+                        mengatur username dan email (biasanya disesuaikan dengan akun GitHub/GitLab), baik secara global
+                        (untuk semua repositori) maupun lokal (khusus repositori tertentu), dan seluruh konfigurasi yang
+                        ada dapat dilihat dengan perintah
+                        <code><strong class="font-monospace">git config --list</strong></code>.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git config --global user.name "Enzo"
+                        <br>
+                        $ git config --global user.email "enzo@example.com"
+                        <br>
+                        $ git config --list
+                        <br>
+                        user.name=Enzo
+                        <br>
+                        user.email=enzo@example.com
+                        <br>
+                        ...
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Init</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">1. /git init/</strong></code> digunakan untuk
+                        menginisialisasi repository Git dengan memberi tahu
+                        bahwa folder saat
+                        ini akan dijadikan repository, karena Git tidak bisa digunakan tanpa proses inisialisasi ini.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git init <br>
+                        Initialized empty Git repository in /your-folder/your-folder/my-project/.git/
+                    </code>
+                </div>
+            </div>
         </div>
     </div>
 
