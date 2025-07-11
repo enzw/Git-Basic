@@ -172,8 +172,8 @@
                         Untracked files:
                         <br>
                         <p></p>
-                        (use "git add <file>..." to include in what will be committed)
-                                hello.txt
+                        &emsp;(use "git add <file>..." to include in what will be committed) <br>
+                        &emsp; &emsp;       hello.txt
                         <br>
                         <p></p>
                         nothing added to commit but untracked files present (use "git add" to track)
@@ -207,8 +207,8 @@
                         <hr>
                         On branch main <br>
                         Changes to be committed: <br>
-                        (use "git restore --staged <file>..." to unstage) <br>
-                                new file:   hello.txt
+                        &emsp;(use "git restore --staged <file>..." to unstage) <br>
+                        &emsp; &emsp;        new file:   hello.txt
                     </code>
                 </div>
             </div>
@@ -267,7 +267,7 @@
                         Author: Enzo <enzo@example.com> <br>
                         Date:   Thu Jul 11 17:00:00 2025 +0700 <br>
                         <p></p>
-                        Memperbarui isi hello.txt <br>
+                        &emsp; Memperbarui isi hello.txt <br>
                         <p></p> <br>
                     </code>
                 </div>
@@ -292,7 +292,7 @@
                 <div class="col-4 p-5">
                     <p class="dark-text fs-5">Contoh Input dan Output</p>
                     <code class="fs-5 dark-text">
-                        $ git clone https://github.com/enzo/projectku.git <br>
+                        $ git clone https://github.com/enzw/projectku.git <br>
                         <hr>
                         Cloning into 'projectku'... <br>
                         remote: Enumerating objects: 10, done. <br>
@@ -300,6 +300,111 @@
                         remote: Compressing objects: 100% (8/8), done. <br>
                         remote: Total 10 (delta 2), reused 10 (delta 2), pack-reused 0 <br>
                         Unpacking objects: 100% (10/10), done.
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Remote</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">8. /git remote -v/</strong></code> digunakan untuk melihat,
+                        menambahkan, atau mengelola koneksi (semacam "API endpoint") antara repository lokal dan
+                        repository server (seperti GitHub/GitLab), agar Git lokal bisa berinteraksi dengan server. <br>
+                        <br>
+                        Anda dapat menambahkan remote dengan command <code><strong class="font-monospace">git remote add origin
+                        https://github.com/enzw/projectku.git</strong></code>
+                        (tidak ada output jika berhasil)
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git remote -v <br>
+                        <hr>
+                        origin  https://github.com/enzw/projectku.git (fetch) <br>
+                        origin  https://github.com/enzw/projectku.git (push)
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Push</h1>
+            </div>
+            <div class="row">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">9. /git push/</strong></code> digunakan untuk mengirimkan
+                        commit yang sudah dibuat di repository lokal ke repository server (seperti GitHub/GitLab),
+                        sehingga perubahan bisa dilihat atau dikolaborasikan oleh orang lain.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git push origin main <br>
+                        <hr>
+                        Enumerating objects: 5, done. <br>
+                        Counting objects: 100% (5/5), done. <br>
+                        Delta compression using up to 8 threads <br>
+                        Compressing objects: 100% (3/3), done. <br>
+                        Writing objects: 100% (3/3), 300 bytes | 300.00 KiB/s, done. <br>
+                        Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 <br>
+                        To https://github.com/enzw/projectku.git <br>
+                        &emsp; 3e2a1f1..5a7c12e  main -> main
+                    </code>
+                </div>
+            </div>
+
+            <div class="row border border-secondary border-end-0 border-start-0 p-5">
+                <h1 class="dark-text ">• Git Pull</h1>
+            </div>
+            <div class="row border-secondary border-bottom">
+                <div class="col-2 border-secondary border-end p-5 text-end">
+                    <p class="dark-text fs-5">
+                        No.
+                    </p>
+                </div>
+                <div class="col-6 p-5 fw-normal border-secondary border-end">
+                    <p class="dark-text fs-4 fw-normal">
+                        <code><strong class="font-monospace">10. /git pull/</strong></code> digunakan untuk mengambil
+                        dan menggabungkan (merge) perubahan terbaru dari repository server ke repository lokal, terutama
+                        jika ada commit baru dari branch lain atau kolaborator.
+                        <br><br>
+                        <code><strong class="font-monospace">git pull</strong></code> adalah gabungan dari
+                        <code><strong class="font-monospace">git fetch</strong></code> dan
+                        <code><strong class="font-monospace">git merge</strong></code>. Jadi pastikan kamu tidak punya
+                        perubahan lokal yang belum di-commit agar tidak terjadi konflik.
+                    </p>
+                </div>
+                <div class="col-4 p-5">
+                    <p class="dark-text fs-5">Contoh Input dan Output</p>
+                    <code class="fs-5 dark-text">
+                        $ git pull origin main <br>
+                        <hr>
+                        remote: Enumerating objects: 5, done. <br>
+                        remote: Counting objects: 100% (5/5), done. <br>
+                        remote: Compressing objects: 100% (3/3), done. <br>
+                        remote: Total 3 (delta 1), reused 0 (delta 0), pack-reused 0 <br>
+                        Unpacking objects: 100% (3/3), done. <br>
+                        From https://github.com/enzw/projectku <br>
+                        &emsp;&emsp;a3f1e9b..c4e7f2a  main       -> origin/main <br>
+                        Updating a3f1e9b..c4e7f2a <br>
+                        Fast-forward <br>
+                        &emsp;hello.txt | 2 +- <br>
+                        &emsp;1 file changed, 1 insertion(+), 1 deletion(-)
                     </code>
                 </div>
             </div>
